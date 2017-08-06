@@ -10,8 +10,7 @@ class Cell extends Component {
   }
 
   buttonClick() {
-    this.setState({count: this.state.count+1});
-    console.log(this.count);
+    console.log("test");
   }
 
   render() {
