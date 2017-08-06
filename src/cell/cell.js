@@ -1,18 +1,25 @@
-import React, { Component} from 'react';
+import React, { Component } from 'react';
 
-class cell extends Component {
+class Cell extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { term: ''}
+    this.state={count: 0};
+
+    this.buttonClick.bind(this);
   }
 
-  render(){
-    return (
-      <div>
-        <btn onChange={event => {this.setState(console.log(test))}}/>
-      </div>
-    );
+  buttonClick() {
+    this.setState({count: this.state.count+1});
+    console.log(this.count);
   }
-}
-export default cell;
+
+  render() {
+    return(
+        <button type="button" className="btn btn-primary indiv-cell" onClick={this.buttonClick}>
+          Button</button>
+      );
+    }
+  }
+
+  export default Cell;

@@ -19,36 +19,24 @@
   font-size: large;
 }
 
-div.player-turn {
-  margin-top: 15px;
-}
-
-.grid {
-  width: 50%;
+div.grid {
   margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.col {
-  border: 1px solid black;
-}
-
-.col.cell {
-  height: 100%;
+  padding: 0;
   width: 100%;
-  padding: 30px;
-  margin: auto;
+  height: auto;
 }
 
-.col.cell.btn {
+button.indiv-cell {
   background-color: #fff;
   color: black;
+  width: 10%;
+  height: 10%;
+  padding: 3rem;
 }
 
-.col.cell.btn:hover {
+button.indiv-cell:hover {
   background-color: orange;
-  color: green;
+  color: white;
 }
 
 
